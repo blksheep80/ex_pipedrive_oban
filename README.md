@@ -1,5 +1,10 @@
 # ExPipedriveOban
 
+[![Hex.pm](https://img.shields.io/hexpm/v/ex_pipedrive_oban.svg)](https://hex.pm/packages/ex_pipedrive_oban)
+[![Hex Docs](https://img.shields.io/badge/hex-docs-lightgreen.svg)](https://hexdocs.pm/ex_pipedrive_oban/)
+[![CI](https://github.com/blksheep80/ex_pipedrive_oban/actions/workflows/elixir.yml/badge.svg)](https://github.com/blksheep80/ex_pipedrive_oban/actions/workflows/elixir.yml)
+[![Coverage Status](https://coveralls.io/repos/github/blksheep80/ex_pipedrive_oban/badge.svg?branch=main)](https://coveralls.io/github/blksheep80/ex_pipedrive_oban?branch=main)
+
 Optional [Oban](https://hex.pm/packages/oban) workers for **cursor-aware Pipedrive
 sync**. Core [`ex_pipedrive`](https://hex.pm/packages/ex_pipedrive)
 ([GitHub](https://github.com/blksheep80/ex_pipedrive)) stays free of Oban; this
@@ -99,6 +104,9 @@ Hex: [`ex_pipedrive_oban`](https://hex.pm/packages/ex_pipedrive_oban).
 ```bash
 mix deps.get
 mix test
+mix coveralls
 mix format --check-formatted
 mix credo --strict
 ```
+
+Coverage HTML: `mix coveralls.html` (opens `cover/excoveralls.html`). CI uploads lcov from the primary Elixir 1.17 cell to [Coveralls](https://coveralls.io/github/blksheep80/ex_pipedrive_oban) and fails if total coverage drops below 65%.

@@ -8,6 +8,7 @@ on:
 
 permissions:
   contents: read
+  checks: write
 
 jobs:
   build:
@@ -51,4 +52,19 @@ jobs:
         run: mix credo --strict
 
       - name: Run tests
+        if: matrix.elixir != '1.17.2'
         run: mix test
+
+      - name: Run tests with coverage
+        if: matrix.elixir == '1.17.2'
+        run: mix coveralls.lcov
+        env:
+          MIX_ENV: test
+
+      - name: Upload coverage to Coveralls
+        if: matrix.elixir == '1.17.2'
+        uses: coverallsapp/github-action@v2
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          file: cover/lcov.info
+          format: lcov
