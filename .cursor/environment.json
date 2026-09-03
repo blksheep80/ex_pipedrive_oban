@@ -1,0 +1,4 @@
+{
+  "name": "ExPipedrive add-on Elixir",
+  "install": "bash .cursor/scripts/cloud-agent-install.sh"
+}

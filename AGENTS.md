@@ -15,6 +15,10 @@ Project skills (read when relevant):
 
 - `.cursor/skills/ex-pipedrive-oban-session/SKILL.md` — session resume
 - `.cursor/skills/ex-pipedrive-oban-pr/SKILL.md` — `gh` / PRs for this repo
+- `.cursor/skills/improve-test-coverage/SKILL.md` — coverage quick-wins
+- `.cursor/skills/hunt-dead-code/SKILL.md` — dead-code audit
+
+Cloud environment: [`.cursor/environment.json`](.cursor/environment.json)
 
 ## Build & Test
 
