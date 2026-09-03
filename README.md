@@ -101,6 +101,9 @@ Hex: [`ex_pipedrive_oban`](https://hex.pm/packages/ex_pipedrive_oban).
 
 ## Development
 
+Issue tracking: [beads](https://github.com/steveyegge/beads) via `bd` (prefix `expdo-`).
+GitHub issues on this repo are the product backlog.
+
 ```bash
 mix deps.get
 mix test

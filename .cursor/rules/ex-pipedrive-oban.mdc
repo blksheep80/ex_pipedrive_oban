@@ -1,0 +1,16 @@
+---
+description: Point agents at ExPipedriveOban HANDOFF and project skills at session start
+alwaysApply: true
+---
+
+# ExPipedriveOban project pointers
+
+Before substantial work in this repo:
+
+1. Read `HANDOFF.md`.
+2. Follow project skills when relevant:
+   - `.cursor/skills/ex-pipedrive-oban-session/SKILL.md` — resume / what to work on
+   - `.cursor/skills/ex-pipedrive-oban-pr/SKILL.md` — `gh` / PRs for this repo
+3. Track execution with beads (`expdo-`); keep GitHub issues on **this** repo as the product backlog.
+4. Ensure `gh repo set-default --view` is `blksheep80/ex_pipedrive_oban`.
+5. Do not file this package's work on `blksheep80/ex_pipedrive` or under `expd-`.
