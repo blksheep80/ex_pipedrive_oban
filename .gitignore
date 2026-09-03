@@ -7,3 +7,8 @@ erl_crash.dump
 *.ez
 ex_pipedrive_oban-*.tar
 /tmp/
+
+# Beads / Dolt files (added by bd init)
+.dolt/
+*.db
+.beads-credential-key
